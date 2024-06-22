@@ -1,0 +1,217 @@
+/* Solo Jekyll template css from https://github.com/chibicode/solo
+   MIT license, http://chibicode.mit-license.org/
+   Modified by Jan Leike
+*/
+
+html {
+  font: Helvetica, sans-serif;
+}
+
+@media (min-width: 30rem) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    margin-top: 2rem;
+  }
+}
+
+body {
+  margin: 2rem 0 5rem;
+  color: #333;
+}
+
+a {
+  color: #0074d9; /* From http://clrs.cc */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5rem -0.1rem /* align left edge */;
+  line-height: 1;
+  color: #111;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 30rem) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+h1 a {
+  color: inherit;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 30rem) {
+  h2 {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+pre,
+blockquote {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+}
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.5rem 1rem;
+  border-left: 0.25rem solid #ccc;
+  color: #666;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+hr {
+  border: none;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  top: -1px;
+}
+
+.container img,
+.container iframe {
+  max-width: 100%;
+}
+
+.container img {
+  margin: 0 auto;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+}
+
+pre,
+code {
+  font-family: inherit;
+  background-color: #eee;
+}
+
+pre {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+code {
+  padding: 0.1rem 0.25rem;
+}
+
+pre > code {
+  padding: 0;
+}
+
+.container {
+  max-width: 37.215rem; /* column widths are in the golden ratio */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+li {
+  padding-bottom: 7px;
+}
+
+a[href$=".pdf"] {
+  padding-left: 18px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAWhJREFUOI2VkT9LQmEUxn+vf4qCuNAdygYhh3DrO/gRmnNvbeoDNLjW6uh1aIs+gG5BYoO1eBeFQNqiS0hFeu7TYEpmqR144T3PeZ8f55zXSQKgGgSjy4I4LBbd99ypUJhvrNUACMOQfD5PNQimISoUJPj1tECNRkNRFKndbmscQaUiSUgisUzbv4wxGTl1V68vbQzDcEZL7UsO4PzsTIfFIp1OZ1Lc6/eR5wGQyWQmuud53DabI8BY9H0f3/dJJpMAOOewiwvc7i4Cplb/LWZ2MF5OLLF5dIR6vVFu8aS2FACJXqnE2skJSMiB/QcQDwasbG8DEN/cQL8Pr2/EiwBmhsUxw+trNsplolKJ9dNTNrNZ3oIKw6fnqfepnwBJ2P09OwcHPHa7JFZXebm8JBoOSUQR8WAwH/De7WJXVzy0WiTSacwMzHDOwdeXzgXY1hYcH2OAfXzMGBYCcrncQtOfgGoQ/MsM8AlsvdGMNoqmGQAAAABJRU5ErkJggg==);
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+#wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+#left,
+#right {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+#left {
+  max-width: 14rem;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+}
+
+#left p {
+  text-align: left;
+}
+
+#right {
+  margin-top: -2rem; /* to compensate for h2 */
+}
+
+@media print {
+  html {
+    font-family: georgia, serif;
+    font-size: 14px;
+  }
+}
+
+p {
+  text-align: justify;
+}
