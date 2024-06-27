@@ -6,22 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My projects and contact info">
     <title>Sébastien Schanen</title>
+    <link href="data:text/css,%3Ais(%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container)%20%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/solo.css">
-    <link href="data:text/css,%3Ais(%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container)%20%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D" rel="stylesheet" type="text/css">
+
     <style>
-      .project-title {
-          display: flex;
-      }
-      .project-title a {
-          margin: 1.4rem 0 -0.5rem 1rem /* align left edge */;
-          font-size: 0.9rem;
-      }
+        .project-title {
+            display: flex;
+        }
+        .project-title a {
+            margin: 1.4rem 0 -1rem 1rem /* align left edge */;
+            font-size: 0.9rem;
+        }
+        .carousel-indicators li {
+            background-color: grey;
+        }        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-image: none;
+        }
+        .carousel-control-prev-icon::after,
+        .carousel-control-next-icon::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: solid grey;
+            border-width: 0 3px 3px 0;
+            padding: 3px;
+        }
+        .carousel-control-prev-icon::after {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+        .carousel-control-next-icon::after {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
     </style>
 </head>
 <body style="margin-top: 10vh">
     <div id="wrapper">
-        <div id="left" class="container">
+        <div id="left" class="container" style="margin-right: 1rem">
             <h1 id="sebastien-schanen">
                 <a href="https://schanensebastien.com/index.html" style="text-decoration: none">Sébastien Schanen</a>
             </h1>
@@ -29,7 +60,7 @@
             <h2>Contact</h2>
               <p><a href="mailto:schanen.sebastien@outlook.de" target="_blank">schanen.sebastien@outlook.de</a></p>
               <p><a href="https://github.com/schanensebastien" target="_blank">Github</a></p>
-              <p><a href="https://linkedin.com/in/schanensebastien" target="_blank">LinkedIn</a></p><br/>
+              <p><a href="https://de.linkedin.com/in/s%C3%A9bastien-schanen-369a87260" target="_blank">LinkedIn</a></p><br/>
                         
             <!--        <ul>
           <li>Freiberuflich in Web- & Grafikdesign</li>
@@ -66,7 +97,7 @@
               
               
             <div class="project-title">
-              <h3>AdWorld</h3><a href="#">View on GitHub</a>
+              <h3>AdWorld</h3><a href="#" target="_blank">View on GitHub</a>
             </div>
               <p>
                 is a comprehensive ad-display management system designed to streamline the operation of digital advertising displays. Key features include:
@@ -80,7 +111,7 @@
             </p>
             
             <div class="project-title">
-              <h3>CryptoProfitStrategizer</h3><a href="#">View on GitHub</a>
+              <h3>CryptoProfitStrategizer</h3><a href="#" target="_blank">View on GitHub</a>
             </div>
             <p>
                 is designed to help users capitalize on the volatile cryptocurrency market. It offers the following features:
@@ -89,6 +120,44 @@
                     <li><b>Parallel Display</b>: View multiple cryptocurrencies simultaneously to compare their performance.</li>
                     <li><b>Profit Strategy Algorithm</b>: Implements a simple yet effective strategy that estimates the best entry and exit points to potentially generate a profit.</li>
                 </ul>
+                <div id="carouselExampleIndicators_crypto" class="carousel slide" data-ride="carousel" style="transform: scale(1.4); margin: 4rem auto 10rem; border: 3px solid grey;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img loading="lazy" src="assets/carousel_images/cryptoprofitstrategizer/fetch_cryptoprofitstrategizer.jpeg" class="d-block w-100" alt="fetch cryptoprofitstrategizer">
+                            <div class="carousel-caption d-none d-md-block" style="color: grey">
+                                <h5></h5>
+                                <p>python3 main.py fetch</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="assets/carousel_images/cryptoprofitstrategizer/plot_cryptoprofitstrategizer.jpeg" class="d-block w-100" alt="plot cryptoprofitstrategizer">
+                            <div class="carousel-caption d-none d-md-block" style="color: grey">
+                                <h5></h5>
+                                <p>main.py plot -c</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="assets/carousel_images/cryptoprofitstrategizer/analyze_cryptoprofitstrategizer.jpeg" class="d-block w-100" alt="analyze cryptoprofitstrategizer">
+                            <div class="carousel-caption d-none d-md-block" style="color: grey">
+                                <h5></h5>
+                                <p>python3 main.py analyze -c 'DOGE-USD' -p 0.01 -v 0.01</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators_crypto" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators_crypto" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </p>
             
             <h3>InvoiceGenie</h3>
@@ -99,9 +168,57 @@
                     <li><b>Client-Specific Versions</b>: Two distinct versions developed to meet the unique needs of Gashi.s, a construction firm, and SweetHome, a home decor business.</li>
                     <li><b>Editing and Writing</b>: Allows comprehensive editing and writing capabilities to manage invoice content effectively.</li>
                 </ul>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="transform: scale(1.4); margin: 4rem auto 10rem; border: 3px solid grey;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img loading="lazy" src="assets/carousel_images/invoicegenie/sweethome_page.webp" class="d-block w-100" alt="sweethome page">
+                            <div class="carousel-caption d-none d-md-block" style="color: grey">
+                                <h5></h5>
+                                <p>empty webpage</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="assets/carousel_images/invoicegenie/sweethome_filledout.webp" class="d-block w-100" alt="sweethome filled out">
+                            <div class="carousel-caption d-none d-md-block" style="color: grey">
+                                <h5></h5>
+                                <p>data filled</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="assets/carousel_images/invoicegenie/invoice_example.webp" class="d-block w-100" alt="invoice example">
+                            <div class="carousel-caption d-none d-md-block" style="color: grey">
+                                <h5></h5>
+                                <p>output-pdf</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="assets/carousel_images/invoicegenie/gashis_page.webp" class="d-block w-100" alt="gashis page">
+                            <div class="carousel-caption d-none d-md-block" style="color: grey">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </p>
             
-            <h3>Textilreinigung Asca Website</h3>
+            <div class="project-title">
+                <h3>Textilreinigung Asca Website</h3><a href="https://textilreinigung-asca.com/" target="_blank">Textilreinigung Asca</a>
+              </div>
             <p>
                 The <b>Textilreinigung Asca Website</b> serves as the online presence for Textilreinigung Asca, offering detailed information and services online. This business website includes:
                 <ul>
@@ -111,6 +228,45 @@
                     <li><b>Mobile Responsive Design</b>: Ensures that the website is accessible and performs well on all devices.</li>
                     <li><b>SEO Optimization</b>: Optimized for search engines to increase visibility and attract more customers.</li>
                 </ul>
+
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" style="transform: scale(1.4); margin: 4rem auto 10rem; border: 3px solid grey;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img loading="lazy" src="assets/carousel_images/textilreinigung_asca/homepage_textilreinigung-asca.webp" class="d-block w-100" alt="homepage textilreinigung asca">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="assets/carousel_images/textilreinigung_asca/english_mobile_homepage_textilreinigung-asca.webp" class="d-block w-100" alt="english mobile homepage textilreinigung asca">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="assets/carousel_images/textilreinigung_asca/prices_textilreinigung-asca.webp" class="d-block w-100" alt="prices textilreinigung asca">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </p>
         </div>
     </div>
